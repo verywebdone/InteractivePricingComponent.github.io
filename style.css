@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(./images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 50vh;
+  background-color:hsl(230, 100%, 99%);
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 600;
+  color: hsl(225, 20%, 60%);
+  width: 60%;
+  
+}
+
+
+div.description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  /* top: -80px; */
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+div.description h2 {
+  color: hsl(227, 35%, 25%);
+  margin-bottom: 0;
+  font-weight: 800;
+  text-align: center;
+}
+
+div.description p {
+  text-align: center;
+  margin: 5px auto;
+}
+
+div.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.price {
+  position: relative;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  min-width: 80%;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+
+.firstLine {
+  height: 30px;
+  padding-top: 0px;
+  width: 85%;
+  margin: 30px auto auto auto;
+  text-align: center;
+  height: 50px;
+}
+
+
+  div.firstLine p{
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+}
+
+.barchange {
+  width: 100%;
+  padding-top: 15px;
+  height: 40px;
+}
+
+
+input[type="range"]{
+  display: block;
+  margin: auto;
+  width: 85%;
+  height: 7px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  background:  linear-gradient(90deg, hsl(174, 77%, 80%) 50%, hsl(224, 65%, 95%) 50%);
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+  background-color: hsl(174, 86%, 45%);
+  cursor: pointer;
+}
+
+#test2{
+  text-align: center;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100% ;
+
+}
+
+
+.monthlyPrice {
+  font-size: 40px;
+  font-weight: 900;
+  color: hsl(227, 35%, 25%);
+}
+
+
+.dollar {
+  font-size: 40px;
+  font-weight: 900;
+  color: hsl(227, 35%, 25%);
+}
+
+p:nth-child(4) {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 35px;
+ }
+ 
+ p:nth-child(4) span {
+   font-size: 12px;
+   margin-right: 10px;
+ }
+
+ .discount {
+  background-color:  hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  padding: 2px 10px;
+  border-radius: 20px;
+  width: 25px;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  -webkit-appearance: none;
+  background:hsl(223, 50%, 87%);
+  outline: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+  background-color: hsl(223, 50%, 87%);
+}
+
+input[type="checkbox"]::before{
+  content: '';
+  width:15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 1s;
+}
+
+input[type="checkbox"]:checked::before{
+  left: 22px;
+  background-color: hsl(174, 86%, 45%);
+}
+
+hr {
+  width: 100%;
+  border: 1px solid rgba(211, 211, 211, 0.33);
+}
+
+section.two {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.two li {
+  list-style: none;
+  width: 80%;
+  line-height: 27px;
+}
+
+ul li span{
+  font-size: 15px;
+  font-weight: 600;
+  color: hsl(225, 20%, 60%);
+  margin-left: 8px;
+}
+
+
+div.checks {
+  width: 100%;
+  text-align: center;
+}
+
+
+div.buttonTrial { 
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.buttonTrial h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  height: 90%;
+  border-radius: 50px;
+  background-color: hsl(227, 35%, 25%);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+} 
+
+
+
+@media only screen and (min-width: 650px) { 
+
+  body{
+    font-size: 25px;
+  }
+
+  #test {
+    display: visible;
+  }
+
+  #test2 {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+  
+
+p {
+  width: 100%;
+  font-size: 20px;
+}
+
+div.description {
+  top: 00px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  height: 200px;
+}
+
+
+  div.wrapper {
+    justify-content: center;
+  }
+
+  div.price {
+    min-width: 600px;
+  }
+  
+  .firstLine {
+    height: 100px;
+    margin-bottom: 30px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: start;
+    justify-content: space-between;
+  }
+
+
+  div.firstLine p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    letter-spacing: 2px;
+  }
+
+
+  .monthlyPrice {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+
+
+  .dollar {
+    font-size: 40px;
+  }
+
+  .barchange {
+    height: 50px;
+    padding-top: 0;
+  }
+
+  p:nth-child(4) span {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+
+  p:nth-child(4) {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .discount {
+    width: 100px;
+    padding: 15px;
+  }
+
+
+  input[type="range"]{
+    width: 85%;
+    height: 12px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    width: 55px;
+    height: 55px;
+  }
+
+
+  .toggle {
+    width: 50px;
+    height: 25px;
+  }
+
+  input[type="checkbox"]::before{
+    width:20px;
+    height: 20px;
+  }
+
+  input[type="checkbox"]:checked::before{
+    left: 27px;
+  }
+
+
+
+  .discount {
+   padding: 2px 8px;
+   width: auto;
+ }
+
+  section.one {
+    margin-bottom: 30px;
+  }
+
+  section.two {
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    padding-bottom: 10px;
+  }
+
+
+   div.checks {
+    text-align: start;
+    width: 50%;
+  }
+
+  div.checks img {
+    margin-right: 5px;
+  }
+  
+  div.buttonTrial {
+    margin-top: 0px;
+    width: 50%;
+    height: 100%;
+  }
+
+
+  .buttonTrial h3 {
+    width: 70%;
+    height: 50px;
+  } 
+
+}
